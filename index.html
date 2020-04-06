@@ -24,12 +24,26 @@
     }
     /*Efeito paralax */
     .caixa1, .caixa2 {
+        position: relative;
         height: 100%;
-        width: 100%;
-        max-width: 1280px;
-        background-size: 1280px;
-
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        background-position: center;
+        background-attachment: fixed;
     }
+   .caixa1>h1 {
+       position: absolute;
+       left: 50%;
+       top: 50%; 
+       color: #fff;
+       padding: 18px;
+       background-color: #111;
+       letter-spacing: 2px;
+       font-size: 25px;
+       margin-right: -50%;
+       transform: translate(-50%, -50%)
+   }
     .caixa1 {
         background-image: url('./img/EaGZh7.jpg');
         
@@ -41,7 +55,7 @@
 </head>
 <body>
     <div class="caixa1">
-        Conteudo 1
+        <h1>Conteudo 1</h1>  
     </div>
     <div class="conteudo">
         <h3>Paralax </h3>
